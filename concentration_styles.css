@@ -1,0 +1,27 @@
+.game-square {
+  box-sizing: border-box;
+  border: 1px solid #000;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.game-square > div {
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+}
+
+.game-square > div > div {
+  height: 50%;
+}
+
+.game-square > div > div:first-child {
+  background-color: gray;
+}
+
+.flip > div {
+  top: -100%;
+}
